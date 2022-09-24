@@ -1,0 +1,175 @@
+@charset "UTF-8";
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i, u, s,
+dl, dt, dd, ol,
+form, fieldset, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: basemachine-line;
+}
+
+article, aside, details, figcaption,
+figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input {
+  margin: 0;
+}
+
+/*Обнуление--------------------------------------*/
+
+body {
+  background-color: black;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu_logoBar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu_logo {
+  height: 80px;
+  width: 80px;
+  margin-top: 10px;
+  z-index: 1;
+}
+
+.menu_basketBar {
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu_acar {
+  height: 60px;
+  width: 60px;
+  margin-left: 70%;
+}
+
+.menu_likeGroup {
+  display: flex;
+}
+
+.menu_likeGroup:hover {
+  transition: 1s;
+  transform: scale(1.2);
+}
+
+.menu_like {
+  height: 30px;
+  width: 30px;
+  margin-left: 60px;
+  z-index: 10;
+}
+
+.menu_like2 {
+  height: 30px;
+  width: 30px;
+  margin-left: 85px;
+  z-index: 1;
+}
+
+.menu_basket:hover {
+  transition: 1s;
+  transform: scale(1.2);
+}
+
+.menu_liked {
+  height: 30px;
+  width: 30px;
+}
+.menu a {
+  font-size: 28px;
+  color: #03F62A;
+  z-index: 10;
+  text-decoration: none;
+}
+
+.items {}
+
+.itemBox {
+  margin: 30px;
+}
+
+.items_rectangle {
+  height: 230px;
+  width: 180px;
+  z-index: 1;
+  background-color: #03F62A;
+}
+
+.items_rectangle:hover {
+  background-color: black;
+  border: 2px dashed #F603DE;
+}
+
+.items_inBasket {
+  margin-top: 10px;  
+  font-size: 28px;
+  color: #03F62A;
+}
+
+input {
+  border: none;
+  background-color: black;
+  color: white;
+  font-family: 'Roboto Mono', monospace;
+  margin-top: 5px;
+  padding: 5px 10px 5px 10px;
+  cursor: pointer;
+}
+
+.items_line-1, .items_line-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.item {
+  height: 230px;
+  width: 180px;
+  margin: 15px;
+  z-index: 10;
+}
+
+.item:hover .items_inBasket {
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
