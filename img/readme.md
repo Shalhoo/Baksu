@@ -1,0 +1,1 @@
+Logo + items + basket + liked
