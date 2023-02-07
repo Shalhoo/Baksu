@@ -50,6 +50,52 @@ body {
   font-family: 'Roboto Mono', monospace;
 }
 
+.logIn {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin-left: 370px;
+    margin-top: 100px;
+}
+
+.registration {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  margin-left: 370px;
+  margin-top: 10px;
+}
+
+.logIn_input {
+    margin: 10px 0;
+    padding: 10px;
+    border: unset;
+    border-bottom: 2px solid #e3e3e3;
+    outline: none;
+}
+
+.logIn_enter {
+  margin-top: 5px;
+}
+
+.logIn_enterButton {
+    padding: 10px;
+    background: #e3e3e3;
+    border: unset;
+    cursor: pointer;
+    margin: 8px;
+}
+
+.logIn_enter, .logIn_enter a {
+  color: #fff;
+}
+
+.logout {
+  margin-left: 750px;
+  color: #fff;
+  text-decoration: none;
+}
+
 .menu {
   display: flex;
   align-items: center;
@@ -82,38 +128,17 @@ body {
   margin-left: 70%;
 }
 
-.menu_likeGroup {
-  display: flex;
+.menu_logpng {
+  margin-left: 100px;
+  height: 45px;
+  width: 45px;
 }
 
-.menu_likeGroup:hover {
+.menu_logpng:hover, .menu_basket:hover{
   transition: 1s;
   transform: scale(1.2);
 }
 
-.menu_like {
-  height: 30px;
-  width: 30px;
-  margin-left: 60px;
-  z-index: 10;
-}
-
-.menu_like2 {
-  height: 30px;
-  width: 30px;
-  margin-left: 85px;
-  z-index: 1;
-}
-
-.menu_basket:hover {
-  transition: 1s;
-  transform: scale(1.2);
-}
-
-.menu_liked {
-  height: 30px;
-  width: 30px;
-}
 .menu a {
   font-size: 28px;
   color: #03F62A;
@@ -121,7 +146,10 @@ body {
   text-decoration: none;
 }
 
-.items {}
+.card_reg_signin:hover {
+  background-color: black;
+  border: 2px dashed #03F62A;
+}
 
 .itemBox {
   margin: 30px;
@@ -145,6 +173,28 @@ body {
   color: #03F62A;
 }
 
+.items_add {
+  background-color: black;
+  border: 2px dashed #F603DE;
+}
+
+.items_add:hover {
+  background-color: black;
+  border: 2px dashed #03F62A;
+}
+
+.items_name {
+  margin-top: 20px;
+  font-size: 14px;
+  color: white;
+  text-decoration: underline;
+}
+
+.items_count {
+  margin-top: 20px;
+  font-size: 14px;
+  color: white;
+}
 input {
   border: none;
   background-color: black;
@@ -153,12 +203,6 @@ input {
   margin-top: 5px;
   padding: 5px 10px 5px 10px;
   cursor: pointer;
-}
-
-.items_line-1, .items_line-2 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .item {
@@ -172,4 +216,103 @@ input {
   opacity: 1;
   background: rgba(0, 0, 0, 0.5);
   cursor: pointer;
+}
+
+/*__________________Регистрация_____________________*/
+
+.signin {
+  color: #000;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+.login {
+  position: relative;
+  height: 750px;
+  width: 405px;
+  margin: auto;
+  margin-top: 40px;
+}
+
+.active, .nonactive {
+  border-bottom: 2px solid #F603DE;
+  cursor:pointer;
+  color: white;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+span {
+  color: white;
+  font-size: 18px;
+  display: inline-block;
+  position: relative;
+}
+
+.text {
+  color: white;
+  width: 89%;
+  padding: 10px 20px;
+  display: block;
+  height: 1px;
+  margin-top: 10px;
+  transition: all 0.5s ease-in-out;
+  border: 2px dashed #03F62A;
+}
+
+.text:focus {
+  outline: 0;
+  border-radius: 20px;
+  border: 2px dashed #2bfc4e;
+  background: #5ba154;
+}
+
+.text:focus + span {
+  opacity: 0.6;
+}
+
+label {
+  display: inline-block;
+  padding-top: 10px;
+  padding-left: 5px;
+}
+
+.signin {
+  background-color: #524f4e;
+  color: white;
+  width: 100%;
+  padding: 10px 20px;
+  display: block;
+  height: 39px;
+  border-radius: 20px;
+  margin-top: 30px;
+  transition: .3s;
+  border: none;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+.signin1 {
+  text-align:center;
+  color: white;
+  width: 100%;
+  display: block;
+  margin-top: 30px;
+  border: none;
+  text-transform: uppercase; 
+}
+
+.signin:hover {
+  color: #2bfc4e;
+  background: #fff;
+  cursor: pointer;
+}
+
+.forget {
+  text-align: center;
+  display: block;
+  top: 20px;
+  position: relative;
 }
