@@ -14,7 +14,7 @@
 		<div class="menu" style="margin-bottom: 60px;">
 			<div class="menu_logoBar">
 				<img src="img/logo 1.png" alt="" class="menu_logo">
-				<a href="goods.php">Baksu Online-Shop</a>
+				<a href="index.php">Baksu Online-Shop</a>
 			</div>
 			<div class="menu_basket">
 				<a href="card.php"><img src="img/a car.svg" alt="" class="menu_acar"></a>
